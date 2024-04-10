@@ -1,0 +1,17 @@
+version: "3.9"
+
+volumes:
+  node-data:
+    driver: local
+
+services:
+  api-node:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: "api-node"
+    restart: "always"
+    ports:
+      - "3000:3000"
+    volumes:
+      - "node-data:/usr/src/app"
