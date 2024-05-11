@@ -12,4 +12,4 @@ cp $HOME/.dockerfiles/templates/<nomedotemplate>/{docker-compose.yml,dockerfile,
 
 ## Templates
 
-*  Node.js com [javascript](./containers/javascript/node/Dockerfile) e express.
+*  Node.js com [javascript](./templates/node/dockerfile) e express.
